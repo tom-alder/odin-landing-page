@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #1F2937;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    list-style: none
+}
+
+ul {
+    display: flex;
+    margin: 0 10px 0 0;
+    padding: 0;
+    gap: 25px;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+.left {
+    margin-left: 100px;
+}
+
+.right {
+    margin-right: 100px;
+}
+
+.hero {
+    background-color: #1F2937;
+    padding: 10px;
+    color: white;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.hero-text {
+    flex: 2;
+}
+
+.social-logos {
+    max-width: 400px;
+    flex: 2;
+}
+
+.spaceleft, .spaceright {
+    flex: 1;
+}
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #1DA1F2;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 100px;
+    /* transition: all 0.5s; */
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+.button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -18px;
+transition: 0.5s;
+}
+
+.button:hover span {
+padding-right: 18px;
+}
+
+.button:hover {
+    background-color: #61b9f0;
+}
+
+.button:hover span:after {
+opacity: 1;
+right: 0;
+}
